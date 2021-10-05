@@ -18,4 +18,4 @@ COPY . .
 EXPOSE 8081
 
 #Run the node command and start our web application
-CMD [ "node", "nmyapp.js" ]
+CMD [ "node", "myapp.js" ]
