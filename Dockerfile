@@ -4,9 +4,8 @@ FROM node:13-alpine
 WORKDIR /usr/src/app
 
 # Install app dependencies
- npm init
 # Copy the file package.json to the working directory with the following command:
-# COPY package*.json ./
+  COPY package*.json ./
  
 #After this we have to run npm install so that we can set up our node environment:
 RUN npm install
