@@ -4,12 +4,13 @@ FROM node:13-alpine
 WORKDIR /usr/src/app
 
 # Install app dependencies
-# A wildcard is used to ensure both package.json AND package-lock.json are copied where available (npm@5+)
-COPY package*.json ./
-
+# Copy the file package.json to the working directory with the following command:
+COPY package*.json /root/nodejs_docker
+#After this we have to run npm install so that we can set up our node environment:
 RUN npm install
-
-# Bundle the App source
+RUN npm init
+RUN npm install express --save
+# Copy the source code inside your working directory to the docker image by running:
 COPY . .
 
 # Expose the port 3000 to network computers
