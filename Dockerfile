@@ -1,4 +1,4 @@
-FROM node:13-alpine
+FROM node:16-alpine
 
 # Create a working directory within NodeJS Docker container
 WORKDIR /usr/src/app
@@ -8,7 +8,7 @@ RUN npm install
 RUN npm install express --save
 # Install app dependencies
 # Copy the file package.json to the working directory with the following command:
- COPY package*.json ./
+ COPY usr/src/app/package.json ./
 # Copy the source code inside your working directory to the docker image by running:
 COPY . .
 
