@@ -8,7 +8,7 @@ RUN npm install
 RUN npm install express --save
 # Install app dependencies
 # Copy the file package.json to the working directory with the following command:
- COPY usr/src/app/package.json ./
+ COPY package*.json ./
 # Copy the source code inside your working directory to the docker image by running:
 COPY . .
 
