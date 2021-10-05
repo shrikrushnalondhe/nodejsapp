@@ -15,7 +15,7 @@ RUN npm install express --save
 COPY . .
 
 # Expose the port 80 to network computers
-EXPOSE 80
+EXPOSE 8081
 
 #Run the node command and start our web application
 CMD [ "node", "nmyapp.js" ]
