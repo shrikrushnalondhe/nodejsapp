@@ -18,4 +18,4 @@ COPY . .
 EXPOSE 80
 
 #Run the node command and start our web application
-CMD [ "node", "nodeapp.js" ]
+CMD [ "node", "nmyapp.js" ]
