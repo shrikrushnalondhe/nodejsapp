@@ -5,7 +5,7 @@ WORKDIR /usr/src/app
 
 # Install app dependencies
 # Copy the file package.json to the working directory with the following command:
-COPY package*.json /root/nodejs_docker
+# COPY package*.json ./
 #After this we have to run npm install so that we can set up our node environment:
 RUN npm install
 RUN npm init
