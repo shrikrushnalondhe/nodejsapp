@@ -14,7 +14,7 @@ RUN npm install express --save
 # Copy the source code inside your working directory to the docker image by running:
 COPY . .
 
-# Expose the port 80 to network computers
+# Expose the port 8081 to network computers
 EXPOSE 8081
 
 #Run the node command and start our web application
